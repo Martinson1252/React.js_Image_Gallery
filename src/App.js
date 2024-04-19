@@ -23,7 +23,8 @@ function App() {
   const imageElements = [];
   images.forEach((image, index) => {
     const element = (
-      <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg hover:drop-shadow-2xl">
+      <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg">
+      {/* <div key={index} className="max-w-sm rounded overflow-hidden shadow-lg hover:drop-shadow-2xl"> */}
         <img src={image.src.portrait} alt="" className="w-full"/>
         <div className="px-6 py-4">
           <div className="font-bold text-purple-500 text-xl mb-2">
@@ -49,7 +50,7 @@ function App() {
     
     <div className="container mx-auto">
       
-      <div class='sticky top-10 max-w-sm rounded  my-10 mx-auto bg-white'>
+      <div class='sticky w-full flex justify-center top-0 my-10 mx-auto bg-white'>
       {/* <div class='sticky top-0 w-auto max-w-sm rounded overflow-hidden my-10 mx-auto bg-white'> */}
       <form onSubmit={()=>setTerm(query)} className="w-full max-w-sm">
         <div className="flex items-center border-b border-b-2 border-purple-500 py-2">
