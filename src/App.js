@@ -6,16 +6,8 @@ function App() {
   const client = createClient(process.env.REACT_APP_KEY);
   const [term,setTerm] = useState('')
   const [page,setPage] = useState(1)
-  const [fix,setFix] = useState(false);
   const [query,setQuery] = useState("cosmos");
   var pages = useState(12);
-  function setFixed(){
-    if (window.scrollY >= 300)
-    setFix(true)
-  else
-  setFix(false)
-  }
-  window.addEventListener("scroll",setFixed)
   useEffect(() => {
     if (!query) return;
     client.photos.search({ query, per_page: pages, page:page })
@@ -57,7 +49,7 @@ function App() {
     
     <div className="container mx-auto">
       
-      <div className='stickysearchbar max-w-sm rounded overflow-hidden my-10 mx-auto'>
+      <div className=' max-w-sm rounded overflow-hidden my-10 mx-auto'>
       <form onSubmit={()=>setTerm(query)} className="w-full max-w-sm">
         <div className="flex items-center border-b border-b-2 border-purple-500 py-2">
         <input onChange={e => setQuery(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Search Image Term..." />
