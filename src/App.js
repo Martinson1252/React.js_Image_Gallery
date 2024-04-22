@@ -57,7 +57,7 @@ function App() {
     
     <div className="container mx-auto">
       
-      <div class='sticky  flex justify-center top-0 my-10 mx-auto bg-white'> {/* all */}
+      <div class='sticky top-0 flex justify-center  my-10 mx-auto bg-white'> {/* all */}
       
 
       {/* <div class='sticky top-0 w-auto max-w-sm rounded overflow-hidden my-10 mx-auto bg-white'> */}
