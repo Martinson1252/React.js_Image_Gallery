@@ -1,6 +1,6 @@
 # React.js image gallery
 
-An app created in `React.js` and `Tailwind.js`. It establishes connection using API key and collects images from [Pexels](https://www.pexels.com/pl-pl/).
+An app created in `React.js` and `Tailwind.js`. The app allows to search for images and show them as image gallery. It establishes connection using API key and collects images from [Pexels](https://www.pexels.com/pl-pl/).
 
 
 
